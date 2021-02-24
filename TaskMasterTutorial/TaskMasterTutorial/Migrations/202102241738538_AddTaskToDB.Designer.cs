@@ -13,7 +13,7 @@ namespace TaskMasterTutorial.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202102241732068_AddTaskToDB"; }
+            get { return "202102241738538_AddTaskToDB"; }
         }
         
         string IMigrationMetadata.Source
