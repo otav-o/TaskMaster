@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\Task.cs" />
     <Compile Include="Models\tmDBContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
