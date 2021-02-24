@@ -66,6 +66,10 @@
     <Compile Include="Migrations\202102231951572_AddStatusToDB.designer.cs">
       <DependentUpon>202102231951572_AddStatusToDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102241710362_AddStatusSeedDataToDb.cs" />
+    <Compile Include="Migrations\202102241710362_AddStatusSeedDataToDb.designer.cs">
+      <DependentUpon>202102241710362_AddStatusSeedDataToDb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\tmDBContext.cs" />
@@ -76,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102231951572_AddStatusToDB.resx">
       <DependentUpon>202102231951572_AddStatusToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102241710362_AddStatusSeedDataToDb.resx">
+      <DependentUpon>202102241710362_AddStatusSeedDataToDb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
