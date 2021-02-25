@@ -122,6 +122,7 @@ namespace TaskMasterTutorial
             this.cmdDeleteTask.TabIndex = 5;
             this.cmdDeleteTask.Text = "Deletar";
             this.cmdDeleteTask.UseVisualStyleBackColor = true;
+            this.cmdDeleteTask.Click += new System.EventHandler(this.cmdDeleteTask_Click);
             // 
             // cmdUpdateTask
             // 
@@ -131,6 +132,7 @@ namespace TaskMasterTutorial
             this.cmdUpdateTask.TabIndex = 4;
             this.cmdUpdateTask.Text = "Atualizar";
             this.cmdUpdateTask.UseVisualStyleBackColor = true;
+            this.cmdUpdateTask.Click += new System.EventHandler(this.cmdUpdateTask_Click);
             // 
             // cmdCreateTask
             // 
