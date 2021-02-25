@@ -102,5 +102,13 @@ namespace TaskMasterTutorial
                 cboStatus.Text = "Selecione";
             }
         }
+
+        private void cmdCancel_Click(object sender, EventArgs e)
+        {
+            cmdUpdateTask.Text = "Atualizar";
+            txtTask.Text = string.Empty;
+            dateTimePicker1.Value = DateTime.Now;
+            cboStatus.Text = "Selecione";
+        }
     }
 }

@@ -113,6 +113,7 @@ namespace TaskMasterTutorial
             this.cmdCancel.TabIndex = 6;
             this.cmdCancel.Text = "Cancelar";
             this.cmdCancel.UseVisualStyleBackColor = true;
+            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
             // 
             // cmdDeleteTask
             // 
