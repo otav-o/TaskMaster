@@ -24,6 +24,22 @@ namespace TaskMasterTutorial
 
             foreach (Status s in statuses)
                 cboStatus.Items.Add(s); // não poderia usar o s.Name!
+
+            refreshData();
+        }
+
+        private void refreshData()
+        {
+            BindingSource bi = new BindingSource(); // objeto intermediário para não adicionar o data grid diretamente à query
+
+            var query = from t in tmContext.Tasks
+                        orderby t.DueDate
+                        select new { t.Id, TaskName = t.Name, StatusName = t.Status.Name, t.DueDate };
+
+            bi.DataSource = query.ToList();
+
+            dataGridView1.DataSource = bi;
+            dataGridView1.Refresh();
         }
 
         private void cmdCreateTask_Click(object sender, EventArgs e)
@@ -39,6 +55,8 @@ namespace TaskMasterTutorial
 
                 tmContext.Tasks.Add(newTask);  // adicionar à coleção Tasks
                 tmContext.SaveChanges(); // registrar no banco
+
+                refreshData();
             }
             else
                 MessageBox.Show("Preencha o formulário corretamente.");
